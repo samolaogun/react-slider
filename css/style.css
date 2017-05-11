@@ -1,0 +1,40 @@
+:root {
+    --thumb-shadow: 0 3px 8px rgba(0, 0, 0, .15), 0 1px 1px rgba(0, 0, 0, .16), 0 3px 1px rgba(0, 0, 0, .10)
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEFF4
+}
+
+* {
+    outline: none
+}
+
+progress::-webkit-progress-value {
+    background-color: #007AFF
+}
+
+progress::-webkit-progress-bar {
+    background-color: #B6B6B6;
+    border-radius: 1.5px;
+    overflow: hidden
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    z-index: 2;
+    height: 28px;
+    width: 28px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: var(--thumb-shadow)
+}
